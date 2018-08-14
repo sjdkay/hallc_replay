@@ -19,8 +19,8 @@ TH1F paero_tot_npe_pos 'SHMS Aero+ Total Number of Photoelectrons; Total Number 
 TH1F paero_tot_npe_neg 'SHMS Aero- Total Number of Photoelectrons; Total Number of Neg Photoelectrons; Number of Entries / 0.5 Photoelectrons' P.aero.negNpeSum 100 0 50 P.aero.negNpeSum>0.0 
 TH1F paero_tot_npe 'SHMS Aero Total Number of Photoelectrons; Total Number of Photoelectrons; Number of Entries / 0.5 Photoelectrons' P.aero.npeSum 100 0 50 P.aero.npeSum>0.0 
 
-TH2F paero_npe_pos 'SHMS Aero+ Number of Photoelectrons vs. PMT Number; PMT Number; Number of Photoelectrons / 0.5 Photoelectrons' [I+1] P.aero.posNpe 7 0.5 7.5 100 0 50 P.aero.posNpe>0.0 
-TH2F paero_npe_neg 'SHMS Aero- Number of Photoelectrons vs. PMT Number; PMT Number; Number of Photoelectrons / 0.5 Photoelectrons' [I+1] P.aero.negNpe 7 0.5 7.5 100 0 50 P.aero.negNpe>0.0 
+TH2F paero_npe_pos 'SHMS Aero+ Number of Photoelectrons vs. PMT Number; PMT Number; Number of Photoelectrons / 0.5 Photoelectrons' [I+1] P.aero.posNpe 7 0.5 7.5 60 0 30 P.aero.posNpe>0.0 
+TH2F paero_npe_neg 'SHMS Aero- Number of Photoelectrons vs. PMT Number; PMT Number; Number of Photoelectrons / 0.5 Photoelectrons' [I+1] P.aero.negNpe 7 0.5 7.5 60 0 30 P.aero.negNpe>0.0 
 
 #----------------------------
 # SHMS AERO TRACK PROJECTION
@@ -30,5 +30,5 @@ TH1F paero_xtrack  'SHMS Aerogel Tracking X; X (cm); Number of Entries / 1 cm'  
 TH1F paero_ytrack  'SHMS Aerogel Tracking Y; Y (cm); Number of Entries / 1 cm'  P.aero.yAtAero 120 -60 60 P.aero.xAtAero!=0.0&&P.aero.yAtAero!=0
 TH2F paero_xytrack 'SHMS Aerogel Tracking Y vs X; Y (cm) / 1 cm; X (cm) / 1 cm' P.aero.yAtAero P.aero.xAtAero 120 -60 60 120 -60 60 P.aero.xAtAero!=0.0&&P.aero.yAtAero!=0
 
-TH2F paero_x_vs_npe 'SHMS Aerogel X vs NPE; NPE / 0.5 PE ; X (cm) / 1 cm' P.aero.npeSum P.aero.xAtAero 100 0 50 120 -60 60 P.aero.xAtAero!=0.0&&P.aero.yAtAero!=0
-TH2F paero_y_vs_npe 'SHMS Aerogel Y vs NPE; NPE / 0.5 PE ; Y (cm) / 1 cm' P.aero.npeSum P.aero.yAtAero 100 0 50 120 -60 60 P.aero.xAtAero!=0.0&&P.aero.yAtAero!=0
+TH2F paero_x_vs_npe 'SHMS Aerogel X vs NPE; NPE / 0.5 PE ; X (cm) / 1 cm' P.aero.npeSum P.aero.xAtAero 60 0 30 120 -60 60 P.aero.xAtAero!=0.0&&P.aero.yAtAero!=0
+TH2F paero_y_vs_npe 'SHMS Aerogel Y vs NPE; NPE / 0.5 PE ; Y (cm) / 1 cm' P.aero.npeSum P.aero.yAtAero 60 0 30 120 -60 60 P.aero.xAtAero!=0.0&&P.aero.yAtAero!=0

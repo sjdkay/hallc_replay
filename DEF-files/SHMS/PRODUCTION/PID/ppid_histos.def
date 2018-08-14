@@ -37,6 +37,8 @@ TH2F pcal_xyclusttrack 'SHMS Cal Cluster X vs Cluster Y; Cluster Y / 1 cm; Clust
 
 TH2F pcal_xtrack_vs_etrack 'SHMS Calorimeter xtrack vs total track energy; Track Energy Deposition (Gev) / 0.1 GeV; X Track (cm) / 1 cm' P.cal.etrack P.cal.xtrack 100 0 10 200 -100 100 pcut_CleanTrack
 TH2F pcal_ytrack_vs_etrack 'SHMS Calorimeter ytrack vs total track energy; Track Energy Deposition (Gev) / 0.1 GeV; Y Track (cm) / 1 cm' P.cal.etrack P.cal.ytrack 100 0 10 200 -100 100 pcut_CleanTrack
+TH2F pcal_xtrack_vs_etracknorm 'SHMS Calorimeter xtrack vs total track energy; Normalized Track Energy Deposition (Gev) / 0.025; X Track (cm) / 1 cm' P.cal.etracknorm P.cal.xtrack 60 0 1.5 200 -100 100 pcut_CleanTrack
+TH2F pcal_ytrack_vs_etracknorm 'SHMS Calorimeter ytrack vs total track energy; Normalized Track Energy Deposition (Gev) / 0.025; Y Track (cm) / 1 cm' P.cal.etracknorm P.cal.ytrack 60 0 1.5 200 -100 100 pcut_CleanTrack
 TH2F pcal_xtrack_vs_etrack_elec 'SHMS Calorimeter xtrack vs total track energy; Track Energy Deposition (Gev) / 0.1 GeV; X Track (cm) / 1 cm' P.cal.etrack P.cal.xtrack 100 0 10 200 -100 100 pcut_CleanTrack&&pcut_cer_hg_elec&&pcut_cal_elec
 TH2F pcal_ytrack_vs_etrack_elec 'SHMS Calorimeter ytrack vs total track energy; Track Energy Deposition (Gev) / 0.1 GeV; Y Track (cm) / 1 cm' P.cal.etrack P.cal.ytrack 100 0 10 200 -100 100 pcut_CleanTrack&&pcut_cer_hg_elec&&pcut_cal_elec
 TH2F pcal_xtrack_vs_etrack_pi 'SHMS Calorimeter xtrack vs total track energy; Track Energy Deposition (Gev) / 0.1 GeV; X Track (cm) / 1 cm' P.cal.etrack P.cal.xtrack 100 0 10 200 -100 100 pcut_CleanTrack&&pcut_cer_hg_pi&&pcut_cal_pi
